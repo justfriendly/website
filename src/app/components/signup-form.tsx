@@ -28,7 +28,6 @@ const SignupForm: React.FC = () => {
   useEffect(() => {
     if (mutation.isSuccess) {
       setName('');
-      setCountry('');
     }
   }, [mutation.isSuccess]);
 
@@ -70,7 +69,7 @@ const SignupForm: React.FC = () => {
           </div>
         )}
       </form>
-      <h2 className='text-4xl mt-4 mb-2 font-bold'>Join the list</h2>
+      <h2 className='text-4xl mt-4 mb-2 font-bold'>The list of friendly people</h2>
       {isLoadingList && <span>Loading...</span>}
       {errorLoadingList && <span>Error: {getListError.message}</span>}
       {(participants ?? []).map((participant, index) => (

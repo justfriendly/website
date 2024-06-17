@@ -13,9 +13,9 @@ export default function Home() {
         <Manifest />
 
         {/* minus margin in both sides */}
-        {/* <div className="bg-white shadow-md overflow-hidden lg:-mx-8">
+        <div className="bg-white shadow-md overflow-hidden lg:-mx-8">
           <iframe style={{width: '100%', minHeight: '400px'}} src="https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=magmidt" frameBorder="0" allowFullScreen />
-        </div> */}
+        </div>
 
         <SignupForm />
       </main>
