@@ -32,3 +32,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Clouflare pages
+
+- Run the development server npm run pages:dev
+- Deploy your application npm run pages:deploy
+- Read the documentation https://developers.cloudflare.com/pages
+- Stuck? Join us at https://discord.gg/cloudflaredev
