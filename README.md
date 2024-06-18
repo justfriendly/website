@@ -39,3 +39,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Deploy your application npm run pages:deploy
 - Read the documentation https://developers.cloudflare.com/pages
 - Stuck? Join us at https://discord.gg/cloudflaredev
+
+
+
+## D1
+
+```
+npx wrangler d1 execute justfriendly --local --file=./src/database/schema.sql
+``

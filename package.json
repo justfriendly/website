@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages@1",
-    "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
+    "pages:deploy": "CLOUDFLARE_ACCOUNT_ID=7045418b154294a2a14f6906be59e022 npm run pages:build && wrangler pages deploy .vercel/output/static",
     "pages:watch": "npx @cloudflare/next-on-pages@1 --watch",
     "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat"
   },
@@ -28,8 +28,9 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.6.1",
+    "@cloudflare/next-on-pages": "^1.11.3",
     "eslint-plugin-next-on-pages": "^1.6.1",
-    "vercel": "^32.3.1"
+    "vercel": "^32.3.1",
+    "@cloudflare/workers-types": "^4.20240529.0"
   }
 }

@@ -1,0 +1,7 @@
+name = "justfriendly"
+pages_build_output_dir = "./vercel/output/static"
+
+[[d1_databases]]
+binding = "DB"                                       # i.e. available in your Worker on env.DB
+database_name = "justfriendly"
+database_id = "acf554a3-2027-43ce-88f1-e90c128520af"

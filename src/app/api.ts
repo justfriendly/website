@@ -1,6 +1,6 @@
 import countryListAlpha2 from "./all-countries";
 
-const API_URL = "http://localhost:62023";
+const API_URL = "/api";
 
 export interface Participant {
   name: string;
@@ -10,7 +10,7 @@ export interface Participant {
 export const addParticipant = async (
   participant: Participant
 ): Promise<any> => {
-  const response = await fetch(`${API_URL}/list-befriendly`, {
+  const response = await fetch(`${API_URL}/list`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -25,7 +25,7 @@ export const getParticipants = async (
   offset?: number
 ): Promise<Participant & { id: number; createdAt: string }[]> => {
   const response = await fetch(
-    `${API_URL}/list-befriendly?limit=${limit}&offset=${offset}`
+    `${API_URL}/list?limit=${limit}&offset=${offset}`
   );
   return response.json();
 };
