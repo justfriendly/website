@@ -1,8 +1,10 @@
+import countryListAlpha2 from "./all-countries";
+
 const API_URL = "http://localhost:62023";
 
 export interface Participant {
   name: string;
-  country: string;
+  country: keyof typeof countryListAlpha2;
 }
 
 export const addParticipant = async (
