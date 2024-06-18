@@ -1,5 +1,4 @@
 name = "justfriendly"
-pages_build_output_dir = "./vercel/output/static"
 
 [[d1_databases]]
 binding = "DB"                                       # i.e. available in your Worker on env.DB
